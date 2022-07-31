@@ -18,7 +18,7 @@ class Store {
   addNote(title) {
     this.notes.push({ id: nanoid(5), title });
   }
-  
+
   removeNote(id) {
     const index = this.notes.findIndex((item) => item.id === id);
     this.notes.splice(index, 1);
